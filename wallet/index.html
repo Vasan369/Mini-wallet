@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Wallet</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row row-cols-1 m-2">
+        <div class="col-12 main p-2">
+          <h4>Your Balance</h4>
+          <h1 id="balance">₹ 0.00</h1>
+          <div class="twobox">
+            <div class="inc">
+              <h4>INCOME</h4>
+              <p id="inc-amt" class="amt-plus">₹ 0.00</p>
+            </div>
+            <div class="exp">
+              <h4>EXPENSE</h4>
+              <p id="exp-amt" class="amt-minus">₹ 0.00</p>
+            </div>
+          </div>
+          <form action="" id="form">
+            <div class="form-controll mb-3">
+              <label for="desc" class="form-label">Description</label>
+              <input
+                class="form-control"
+                type="text"
+                name="desc"
+                id="desc"
+                placeholder="Enter Discription"
+                required
+              />
+            </div>
+            <div class="d-flex">
+              <div class="form-controll mb-3 col-6">
+                <label for="amount" class="form-label">Amount</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  name="amount"
+                  id="amount"
+                  placeholder="₹ 0.00"
+                  required
+                />
+              </div>
+              <button class="btn btn-primary col-6" type="submits">Add</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 details">
+          <h2 class="mt-3">Transaction Details</h2>
+          <ul class="trans" id="trans">
+            <li class="exp">
+              Insurance
+              <span>1500</span>
+              <button class="btn-del">x</button>
+            </li>
+            <li class="inc">
+              Salary
+              <span>100</span>
+              <button class="btn-del">x</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
